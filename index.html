@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JR-Factor</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <header class="main-header">
+          <img src="images/header.jpg" alt="" >
+          <div class="header-text">
+            <h1 class="main-titles">JR-Factor</h1>
+            <h3 class="main-titles">Portafolio Personal</h3>
+          </div>
+        </header>
+      </div>
+      <div class="navigation">
+        <nav class="main-nav">
+          <button onclick="appears1()" class="no-display btn" type="button" name="button"><i class="fas fa-bars"></i> Menú</button>
+          <a class="links appears1" id="links" href="index.html">Inicio</a>
+          <a class="links appears1" id="links" href="#who">¿Quien Soy?</a>
+          <a class="links appears1" id="links" href="#knows">Conocimientos</a>
+        </nav>
+      </div>
+      <div class="main-content">
+        <article class="content" id="who">
+          <section class="content-item-1" >
+            <img src="images/im.jpeg" alt="me" style="width:100%;z-index: -1;height:600px;opacity:0.6;">
+            <div class="content-item-1-text">
+              <h2>¿Quien Soy?</h2>
+              <p>Mi nombre es Juan Romero, soy un recien graduado bachiller en ciencias con muchas ganas de seguir aprendiendo,
+                una de mis grandes metas es convertirme en un developer especializado en desarrollo web y el desarrollo de aplicaciones nativas,
+                se que para lograr eso necesitare de mucho esfuerzo y motivacion pero a pesar de esas "complicaciones" estoy decicido a lograrlo cueste lo que cueste.</p>
+            </div>
+          </section>
+        </article>
+        <article class="content">
+          <div class="content-item-2" id="knows">
+            <h2 style="width:100%;text-align:center;">Conocimientos</h2>
+            <article class="knows html">
+              <h4>HTML5</h4>
+              <p>Domino perfectamente el nivel basico-intermedio de el lenguaje de marcado de hiper texto HTML y tratando de mejorar su posicion</p>
+              <img src="images/html.png" alt="html logo">
+            </article>
+            <article class="knows css">
+              <h4>CSS3</h4>
+              <p>Tambien tengo ciertos conocimientos en el diseño web con css y el diseño responsive para otros dispositivos.</p>
+              <img src="images/css3.png" alt="css logo">
+            </article>
+            <article class="knows js">
+              <h4>JavaScript</h4>
+              <p>Obtuve conocimientos basicos en el lenguaje conocido JavaScript(Js) y estoy comenzando a obtener experiencia en sus tecnologias. </p>
+              <img src="images/js.png" alt="js logo">
+            </article>
+          </div>
+        </article>
+      </div>
+      <div class="footer">
+        <footer class="main-footer">
+          <div class="contact-links">
+            <p class="number appears2" id="nums">+ 58 4243559900</p>
+            <a class="links2 mail" href=""><i class="fas fa-envelope"></i></a>
+            <a class="links2 fb" href="https://www.facebook.com/juan.rmii"><i class="fab fa-facebook-square"></i></a>
+            <a class="links2 tw" href="https://twitter.com/JRfactor07"><i class="fab fa-twitter-square"></i></a>
+            <a class="links2 git" href="https://github.com/JR-Factor"><i class="fab fa-github"></i></a>
+            <a class="links2 ws" onclick="appears2()" href="#."><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+
+      function appears1() {
+        var a = document.getElementsByClassName("links");
+        for (var i = 0; i < a.length; i++) {
+          a[i].classList.toggle("appears1");
+        }
+       }
+
+      var a2 = document.getElementById("nums");
+      function appears2() {
+        a2.classList.toggle("appears2");
+       }
+    </script>
+  </body>
+</html>
